@@ -2,7 +2,7 @@ name: Output Information
 on: workflow_dispatch
 jobs:
   info:
-    runs-on: ubuntu_latest
+    runs-on: ubuntu-latest
     steps: 
       - name: Meta Data Trigger
         run: echo "{{ $toJSON(github) }}"
